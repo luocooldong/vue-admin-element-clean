@@ -40,18 +40,6 @@ export const constantRoutes = [
         meta: { title: 'dashboard', icon: 'dashboard', noCache: true, affix: true }
       }
     ]
-  },
-  {
-    path: '/documentation',
-    component: Layout,
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/documentation/index'),
-        name: 'Documentation',
-        meta: { title: 'documentation', icon: 'documentation', affix: true }
-      }
-    ]
   }
 ]
 
@@ -100,7 +88,6 @@ export const asyncRoutes = [
       }
     ]
   },
-
   {
     path: '/example',
     component: Layout,
